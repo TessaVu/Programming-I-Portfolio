@@ -15,10 +15,12 @@ public class King extends Piece {
     if (Math.sqrt(Math.pow(Math.abs((toX - fromX)), 2)) + Math.pow(Math.abs((toY - fromY)), 2) != Math.sqrt(2)) {
       return false;
     }
-    if (moved) {
+    if (Math.abs(toX - fromX) > 1 || Math.abs(toY - fromY) > 1) {
+      if (moved) {
+        return false;
+      }
       return false;
     }
-    return false;
   }
 }
 
