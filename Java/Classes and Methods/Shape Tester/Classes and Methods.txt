@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class boxCalc {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double height = h;
+		double length = l;
+		double width = w;
+		double volume = 0;
+		double area = 0;
+	System.out.println(“Please enter the height of the box: ”);
+	System.out.println(“Please enter the length of the box: “);
+	System.out.println(“Please enter the width of the box: “);
+	h = in.nextDouble();
+	l = in.nextDouble();
+	w = in.nextDouble();
+	getVolume = h * l * w;
+	getSurfaceArea = 2 * ((l * w) + (h * l) + (h * w));
+	System.out.println(“The volume for your box: ” + volume);
+	System.out.println(“The surface area for your box: ” + area);
+	}
+}
+
+public class sphereCalc {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double radius = 0;
+		double volume = 0;
+		double area = 0;
+	System.out.println(“Please enter the radius of the sphere: “);
+	r = in.nextDouble();
+	getVolume = (4 * 22 * r * r * r)/(3 * 7);
+	getSurfaceArea = 4 * Math.PI * Math.pow(r, 2);
+	System.out.println(“The volume for your sphere: “ + volume);
+	System.out.println(“The surface area for your sphere: ” + area);
+	}
+}
+
+public class pyraVol {
+	public static void main (String[] args) {
+		Scanner in = new Scanner (System.in);
+		double height = 0;
+		double length = 0;
+		double width = 0;
+		double volume = 0;
+		double area = 0;
+	System.out.println(“Please enter the height of the pyramid: ”);
+	System.out.println(“Please enter the length of the pyramid: ”);
+	System.out.println(“Please enter the width of the pyramid: “);
+	h = in.nextDouble();
+	l = in.nextDouble();
+	w = in.nextDouble();
+	getVolume = (length * width * height) / 3;
+	getSurfaceArea = length * width + length * (Math.sqrt(Math.pow(width / 2)) + Math.pow(height))) + width * (Math.sqrt(Math.pow(length / 2) + Math.pow(height)));
+	System.out.println(“The volume for your pyramid: ” + volume);
+	System.out.println(“The surface area for your pyramid: “ + area);
+	}
+}
+
+public class geoTester {
+	public static void main(String[] args) {
+		Scanner cl = new Scanner(System.cl);
+		System.out.println(“Radius: “);
+		double r = cl.nextDouble();
+		System.out.println(“Height: “);
+		double h = cl.nextDouble();
+		System.out.println(“Length: ”);
+		double l = cl.nextDouble();
+		System.out.println(“Width: ”);
+		double w = cl.nextDouble();
+		System.out.println(“Box Volume: “ + boxCalc.getVolume(h, l , w));
+		System.out.println(“Box Surface Area: “ + boxCalc.getSurfaceArea(h, l, w));
+		System.out.println(“Sphere Volume: “ + sphereCalc.getVolume(r));
+		System.out.println(“Sphere Surface Area: “ + sphereCalc.getSurfaceArea(r));
+		System.out.println(“Pyramid Volume: ” + pyraCalc.getVolume(h, l, w));
+		System.out.println(“Pyramid Surface Area: “ + pyraCalc.getSurfaceArea(h,l, w));
+	}
+}

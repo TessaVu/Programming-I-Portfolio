@@ -1,0 +1,105 @@
+//Tessa Vu 2.22.2017
+
+public class BoxTV {
+    // Edit start.
+    private double height, length, width;
+    public BoxTV(double w, double l, double h) {
+        // Edit end.
+        width = w;
+        length = l;
+        height = h;
+    }
+    public double getSurfaceArea() {
+        double surfaceArea = 2 * (length * height + width * height);
+        return surfaceArea;
+    }
+    public double getVolume() {
+        double volume = length * width * height;
+        return volume;
+    }
+}
+
+// Tessa Vu 2.22.2017
+
+public class CylinderTV {
+    private double height, radius;
+        public CylinderTV(double h, r) {
+            h = height;
+            r = radius;
+    }
+    public double getSurfaceArea() {
+        double surfaceArea = (2 * Math.PI * r * h) + (2 * Math.PI * Math.pow(r, 2));
+        return surfaceArea;
+    }
+    public double getVolume() {
+        double volume = Math.PI * Math.pow(r, 2) * h;
+        return volume;
+    }
+}
+
+
+// Tessa Vu 2.22.2017
+
+public class PyramidTV {
+    // Edit start.
+    private double height, baseLength;
+    public PyramidTV(double h, double b) {
+        // Edit end.
+        height = h;
+        baseLength = b;
+    }
+    public double getSurfaceArea() {
+        double sideLength = Math.sqrt(height * height + baseLength * baseLength / 4);
+        double surfaceArea = 2 * sideLength * baseLength;
+        return surfaceArea;
+    }
+    public double getVolume() {
+        double volume = height * baseLength * baseLength / 3;
+        return volume;
+    }
+}
+
+import java.util.Scanner;
+public class ShapeTesterTV {
+    public static void main(String[] args) {
+        int boxW, boxL, boxH;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to shape maker! Lets find the volume and surface area for a few shapes...");
+        System.out.println("Lets start with a box. Enter the width of box: ");
+        boxW = scan.nextInt();
+        System.out.println("Enter the length of box: ");
+        boxL = scan.nextInt();
+        System.out.println("Enter the height of box: ");
+        boxH = scan.nextInt();
+        Box box = new Box(boxW, boxL, boxH);
+        System.out.println("Surface Area of Box: " + box.getSurfaceArea());
+        System.out.println("Volume of Box: " + box.getVolume());
+        int sphereR;
+        System.out.println("Now a sphere. Enter radius of the sphere: ");
+        sphereR = scan.nextInt();
+        Sphere sphere = new Sphere(sphereR);
+        System.out.println("Surface Area of Sphere: " + sphere.getSurfaceArea());
+        System.out.println("Volume of Sphere: " + sphere.getVolume());
+        int pyramidH, pyramidB;
+        System.out.println("Now a square base pyramid. Enter height of the pyramid: ");
+        pyramidH = scan.nextInt();
+        System.out.println("Enter base length of the pyramid: ");
+        pyramidB = scan.nextInt();
+        Pyramid pyramid = new Pyramid(pyramidH, pyramidB);
+        System.out.println("Surface Area of Pyramid: " + pyramid.getSurfaceArea());
+        System.out.println("Volume of Pyramid: " + pyramid.getVolume());
+        
+        // Tessa Vu 2.22.2017
+        
+        // Edit start.
+        int cylinderH, cylinderR;
+        System.out.println("Now a cylinder. Enter the height of the cylinder: ");
+        cylinderH = scan.nextInt();
+        System.out.println("Enter radius of the cylinder: ");
+        cylinderR = scan.nextInt();
+        CylinderTV cylinder = new CylinderTV(cylinderH, cylinderR);
+        System.out.println("Surface Area of Cylinder: " + cylinder.getSurfaceArea());
+        System.out.println("Volume of Cylinder: " + pyramid.getVolume());
+        //Edit end.
+    }
+}
