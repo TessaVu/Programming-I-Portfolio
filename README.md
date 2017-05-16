@@ -1,29 +1,30 @@
 # PROGRAMMING I PORTFOLIO 2016 - 2017
 ## TESSA VU (vutessa.tv@gmail.com)
 Skyline High School
+
 Project programmed with Bryn Esperson and Nastassja Motro.
 
 https://tessavu.github.io/Programming-I-Portfolio/
 ## OUR GAME
 
-We have decided to create a Chess Game using the Java Language. But we made is so that this would be running on the Processing app as it is good to use when dealing with graphics. This program is just supposed to replicate the design of a chess game like one you would find on an app on your phone or on the computer. It's not as fancy with as many special effects as some other games but it still has many cool features.
+We have decided to create a chess game using the Java language. But we made this so that this would be running on the Processing app as it is good to use when dealing with graphics. This program is just supposed to replicate the design of a chess game like one you would find on an app on your phone or on the computer. It's not as fancy with as many special effects as some other games but it still has many cool features.
 
 ## BASIC RULES
 
-Chess is a two player game. One person controls one set of peices (black pieces) and the other player controls the opposite set of pieces (white pieces). Players cannot switch set of pieces midgame. The goal of the game is to get the other player's King into checkmate.
+Chess is a two player game. One person controls one set of peices (black pieces) and the other player controls the opposite set of pieces (white pieces). Players cannot switch set of pieces midgame. The goal of the game is to get the other player's king into checkmate.
 
-### CHECK, CHECKMATE, and STALEMATE
+### CHECK, CHECKMATE, AND STALEMATE
 
-* Check - When the King of a player can be taken by a piece of the opponent, one says that the King is in check. It is not allowed to make a move, such that ones King is in check after the move.
+* Check - When the king of a player can be taken by a piece of the opponent, one says that the king is in check. It is not allowed to make a move, such that ones king is in check after the move.
 
-* Checkmate - When a player is in check, and he cannot make a move such that after the move, the King is not in check, then he is mated. The player that is mated loses the game, and the player that mates him wins the game.
+* Checkmate - When a player is in check, and he cannot make a move such that after the move, the king is not in check, then he is mated. The player that is mated loses the game, and the player that mates him wins the game.
 
 * Stalemate - When a player cannot make any legal move, but he is not in check, then the player is said to be stalemated. In a case of a stalemate, the game is a draw.
 
 ## STARTER
 The game starts off with a main menu screen. We decided to create a theme based game. The theme is Marvel vs. DC with Marvel being the white designated set of pieces and DC being the black designated set of pieces. As soon as the game is opened, the starter menu will pop open.
 
-**Code for Starter Menu:**
+**Start menu code:**
 
 ```javascript
 PImage startmenu;
@@ -51,7 +52,7 @@ void draw() {
   }
 ``` 
 
-### This is what the start menu would look like:
+### Start menu:
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/versus.png "Logo Title Text 1")
 
@@ -59,7 +60,7 @@ void draw() {
 
 In Chess, the white set (in this case the Marvel pieces) is always first to move. Movement is required every round. A player may not opt to skip his or her turn ever.
 
-**Code For Main Chess Game Entry Point:**
+**Main chess game entry point code:**
 
 ```javascript
 public class Chess {
@@ -112,7 +113,7 @@ s    private Board board = new Board();
 
 ## PLAYING SCREEN
 
-#### When the actual playing screen loads it would look something like this:
+#### Playing screen:
   The first is an example of the mockup using the actual pictures of the characters.
   
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/figuresmockup.png "Logo Title Text 1")
@@ -125,7 +126,7 @@ s    private Board board = new Board();
 
 A chessboard is a type of checkerboard. It consists of 64 squares (eight rows and eight columns). The squares are arranged in two alternating colors (light and dark).
 
-**Code for Board:**
+**Board code:**
 
 ```javascript
 public class Board {
@@ -148,7 +149,7 @@ public class Board {
 
 Pieces other than pawns capture in the same way they move. A capturing peice replaces the opponent's piece on its square, except for an _en passant_ capture. Captured pieces are immediately removed from the game. A square may hold ony one piece at any given time. 
 
-**Code for Spot:**
+**Spot code:**
 
 ```javascript
 apublic class Spot {
@@ -189,7 +190,7 @@ apublic class Spot {
 
 Chess involves two players. Players take turns alternating moving one piece at a time (except in the case of the castle maneuver).
 
-**Code for Player:**
+**Player code:**
 
 ```javascript
 public class Player {
@@ -244,7 +245,7 @@ public class Player {
 
 All the separate chess piece classes in this game use inheritance from the class Piece below. There are a total of sixteen pieces per player: one king, one queen, two bishops, two knights, two rooks, and eight pawns. Each player controls their own set and may not play or use the other player's set.
 
-**Code for Main Piece Class:**
+**Main piece class code:**
 
 ```javascript
 public abstract class Piece {
@@ -290,7 +291,7 @@ public abstract class Piece {
 }
 ```
 
-### The Characters on the DC side are:
+### DC (black) characters:
 
 * Martian Manhunter - as the king.
 
@@ -304,7 +305,7 @@ public abstract class Piece {
 
 * Flash - as the pawn.
 
-### The Characters on the Marvel side are:
+### Marvel (white) characters:
 
 * Captain America - as the king.
 
@@ -334,7 +335,7 @@ public abstract class Piece {
 
 ### Special Moves:
 
-#### Castling - Under certain, special rules, a King and Rook can move simultaniously in a castling move. The following conditions must be met:
+#### Castling - Under certain, special rules, a king and rook can move simultaniously in a castling move. The following conditions must be met:
 
 - The king that makes the castling move has not yet moved in the game.
   
@@ -360,7 +361,7 @@ public abstract class Piece {
 
 - This option, though, only stays open for one move.
 
-**Code for King Piece with Castling Move:**
+**King with castling code:**
 
 ```javascript
 public class King extends Piece {
@@ -405,7 +406,7 @@ castle = true;
 return true;
 ```
 
-**Code for Queen Piece:**
+**Queen code:**
 
 ```javascript
 public class Queen extends Piece {
@@ -433,7 +434,7 @@ public class Queen extends Piece {
 }
 ```
 
-**Code for Bishop Piece:**
+**Bishop code:**
 
 ```javascript
 public class Bishop extends Piece {
@@ -454,7 +455,7 @@ public class Bishop extends Piece {
 }
 ```
 
-**Code for Knight Piece:** 
+**Knight code:** 
 
 ```javascript
 public class Knight extends Piece {
@@ -478,7 +479,7 @@ public class Knight extends Piece {
 }
 ```
 
-**Code for Rook Piece with Castling Move:**
+**Rook with castling code:**
 
 ```javascript
 public class Rook extends Piece {
@@ -530,7 +531,7 @@ castle = true;// moved = true;
 return true;
 ```
 
-**Code for Pawn Piece with _En Passant_ Move:**
+**Pawn with _En Passant_ code:**
 
 ```javascript
 public class Pawn extends Piece {
@@ -582,7 +583,7 @@ public class Pawn extends Piece {
 
 Chess ends as soon as one player get the opponent's king in checkmate, or when the game ends in a draw. As soon as this happends, the screen will change from the chessboard graphics to an end game graphic.
 
-**The Following is Code for if the Game will end with the Marvel Winning:**
+**Marvel Wins:**
 
 ```javascript
 PImage gameover;
@@ -614,7 +615,7 @@ void draw() {
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/marvelwins.png "Logo Title Text 1")
 
-**The Following is Code for if the Game will end with DC Winning:**
+**DC Wins:**
 
 ```javascript
 PImage gameover;
@@ -647,7 +648,7 @@ void draw() {
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/dcwins.png "Logo Title Text 1")
 
-**The Following is Code for if the Game will end in a Draw:**
+**Draw/Stalemate code:**
 
 ```javascript
 PImage gameover;
