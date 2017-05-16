@@ -1,5 +1,5 @@
-# Programming I Portfolio 2016 - 2017
-## Tessa Vu (vutessa.tv@gmail.com)
+# PROGRAMMING I PORTFOLIO 2016 - 2017
+## TESSA VU (vutessa.tv@gmail.com)
 Skyline High School
 Project programmed with Bryn Esperson and Nastassja Motro.
 
@@ -8,11 +8,11 @@ https://tessavu.github.io/Programming-I-Portfolio/
 
 We have decided to create a Chess Game using the Java Language. But we made is so that this would be running on the Processing app as it is good to use when dealing with graphics. This program is just supposed to replicate the design of a chess game like one you would find on an app on your phone or on the computer. It's not as fancy with as many special effects as some other games but it still has many cool features.
 
-## Basic Rules
+## BASIC RULES
 
 Chess is a two player game. One person controls one set of peices (black pieces) and the other player controls the opposite set of pieces (white pieces). Players cannot switch set of pieces midgame. The goal of the game is to get the other player's King into checkmate.
 
-### Check, Checkmate, and Stalemate
+### CHECK, CHECKMATE, and STALEMATE
 
 * Check - When the King of a player can be taken by a piece of the opponent, one says that the King is in check. It is not allowed to make a move, such that ones King is in check after the move.
 
@@ -20,7 +20,7 @@ Chess is a two player game. One person controls one set of peices (black pieces)
 
 * Stalemate - When a player cannot make any legal move, but he is not in check, then the player is said to be stalemated. In a case of a stalemate, the game is a draw.
 
-## Starter
+## STARTER
 The game starts off with a main menu screen. We decided to create a theme based game. The theme is Marvel vs. DC with Marvel being the white designated set of pieces and DC being the black designated set of pieces. As soon as the game is opened, the starter menu will pop open.
 
 **Code for Starter Menu:**
@@ -55,7 +55,7 @@ void draw() {
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/versus.png "Logo Title Text 1")
 
-## Game
+## GAME
 
 In Chess, the white set (in this case the Marvel pieces) is always first to move. Movement is required every round. A player may not opt to skip his or her turn ever.
 
@@ -110,7 +110,7 @@ s    private Board board = new Board();
 }
 ```
 
-## Playing Screen
+## PLAYING SCREEN
 
 #### When the actual playing screen loads it would look something like this:
   The first is an example of the mockup using the actual pictures of the characters.
@@ -185,7 +185,7 @@ apublic class Spot {
 }
 ```
 
-## Players
+## PLAYERS
 
 Chess involves two players. Players take turns alternating moving one piece at a time (except in the case of the castle maneuver).
 
@@ -240,9 +240,9 @@ public class Player {
 }
 ```
 
-## Piece
+## PIECES
 
-All the separate chess piece classes in this game use inheritance from the class Piece below. There are a total of sixteen pieces per player: one King, one Queen, two Bishops, two Knights, two Rooks, and eight Pawns. Each player controls their own set and may not play or use the other player's set.
+All the separate chess piece classes in this game use inheritance from the class Piece below. There are a total of sixteen pieces per player: one king, one queen, two bishops, two knights, two rooks, and eight pawns. Each player controls their own set and may not play or use the other player's set.
 
 **Code for Main Piece Class:**
 
@@ -318,7 +318,7 @@ public abstract class Piece {
 
 * Hawkeye - as the pawn.
 
-## Here are the rules for the pieces:
+## PIECE RULES
 
 * King - The king moves only one square in any direction: horizontally, vertically, or diagonally. The king can do a special move called castling but it may only be done with the use of the rook. The king is the most important piece of the game, and moves must be made in such a way that the king is never in check. If in check, the king must move and not any other piece.
 
@@ -578,7 +578,7 @@ public class Pawn extends Piece {
 }
 ```
 
-## End Menu
+## END MENU
 
 Chess ends as soon as one player get the opponent's king in checkmate, or when the game ends in a draw. As soon as this happends, the screen will change from the chessboard graphics to an end game graphic.
 
