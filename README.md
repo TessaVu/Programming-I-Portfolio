@@ -611,7 +611,7 @@ void draw() {
   text("YOU ARE NOW A LOSER", width/2, 450);
 }
 ```
-**This is how it would look*
+**Photo:**
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/marvelwins.png "Logo Title Text 1")
 
@@ -644,7 +644,7 @@ void draw() {
 }
 ```
 
-**This is how it would look like**
+**Photo:**
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/dcwins.png "Logo Title Text 1")
 
@@ -677,6 +677,6 @@ void draw() {
 }
 ```
 
-**This is how it would look like**
+**Photo:**
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/draw.png "Logo Title Text 1"
