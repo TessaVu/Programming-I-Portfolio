@@ -1,6 +1,6 @@
 // Tessa Vu
 
-PImage gameover;
+PImage draw;
 PFont title;
 PFont description;
 int screenX, screenY, stage;
@@ -10,8 +10,8 @@ void setup() {
   screenX = round(width);
   screenY = round(height);
   size(screenX, screenY);
-  gameover = loadImage("Versus.png");
-  image(gameover, 0, 0, screenX, screenY);
+  draw = loadImage("Versus.png");
+  image(draw, 0, 0, screenX, screenY);
   title = createFont("Anurati-Regular", 80, true);
   description = createFont("Anurati-Regular", 30, true);
 }
