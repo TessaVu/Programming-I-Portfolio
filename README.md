@@ -4,7 +4,7 @@ Skyline High School
 Project programmed with Bryn Esperson and Nastassja Motro.
 
 https://tessavu.github.io/Programming-I-Portfolio/
-## Game
+## OUR GAME
 
 We have decided to create a Chess Game using the Java Language. But we made is so that this would be running on the Processing app as it is good to use when dealing with graphics. This program is just supposed to replicate the design of a chess game like one you would find on an app on your phone or on the computer. It's not as fancy with as many special effects as some other games but it still has many cool features.
 
@@ -678,8 +678,4 @@ void draw() {
 
 **This is how it would look like**
 
-![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/draw.png "Logo Title Text 1")
-
-## THE END :)
-
-# Hope you enjoy our game! :)
+![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/draw.png "Logo Title Text 1"
