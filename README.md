@@ -3,4 +3,3 @@
 Skyline High School
 
 https://tessavu.github.io/Programming-I-Portfolio/
-![alt text](https://tessavu.github.io/Programming-I-Portfolio/pic.png "Logo Title Text 1")
