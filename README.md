@@ -51,7 +51,8 @@ void draw() {
   text("CHESS: DC v. MARVEL", width/2, 400);
   textFont(description);
   text("PRESS ANY KEY TO START THE GAME", width/2, 450);
-  }``` 
+  }
+``` 
 
 ### Start menu:
 
@@ -66,7 +67,7 @@ In Chess, the white set (in this case the Marvel pieces) is always first to move
 ```javascript
 public class Chess {
   public static void main(String[] args) {
-s    private Board board = new Board();
+    private Board board = new Board();
     private Player marvel;
     private Player dc;
     public Chess() {
@@ -651,7 +652,8 @@ void draw() {
 
 **Victory code:**
 
-```PImage win;
+```javascript
+PImage win;
 PFont title;
 PFont description;
 int screenX, screenY, stage;
