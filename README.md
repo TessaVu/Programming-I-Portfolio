@@ -4,6 +4,8 @@ Skyline High School
 
 Project programmed with Bryn Esperson and Nastassja Motro.
 
+Contributed with designing graphics for chess pieces with Adobe Illustrator and Adobe Photoshop, programming the special castling movement on the king and rook, and programming the start menu and end menus on Processing.
+
 https://tessavu.github.io/Programming-I-Portfolio/
 ## OUR GAME
 
@@ -54,7 +56,7 @@ void draw() {
 
 ### Start menu:
 
-![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/versus.png "Logo Title Text 1")
+![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/Versus.png "Logo Title Text 1")
 
 ## GAME
 
@@ -648,6 +650,36 @@ void draw() {
 
 ![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/dcwins.png "Logo Title Text 1")
 
+**Victory code:**
+
+```PImage win;
+PFont title;
+PFont description;
+int screenX, screenY, stage;
+
+void setup() {
+  size(1920, 1080);
+  screenX = round(width);
+  screenY = round(height);
+  size(screenX, screenY);
+  win = loadImage("Versus.png");
+  image(win, 0, 0, screenX, screenY);
+  title = createFont("Anurati-Regular", 80, true);
+  description = createFont("Anurati-Regular", 30, true);
+}
+
+void draw() {
+  textAlign(CENTER);
+  textFont(title);
+  text("VICTORY", width/2, 400);
+  textFont(description);
+  text("YOU ARE A WINNER", width/2, 450);
+}```
+
+**Photo:**
+
+![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/win.png "Logo Title Text 1")
+
 **Draw/Stalemate code:**
 
 ```javascript
@@ -679,4 +711,4 @@ void draw() {
 
 **Photo:**
 
-![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/draw.png "Logo Title Text 1"
+![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/draw.png "Logo Title Text 1")
