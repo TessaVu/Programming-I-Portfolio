@@ -51,12 +51,11 @@ void draw() {
   text("CHESS: DC v. MARVEL", width/2, 400);
   textFont(description);
   text("PRESS ANY KEY TO START THE GAME", width/2, 450);
-  }
-``` 
+  }``` 
 
 ### Start menu:
 
-![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/Versus.png "Logo Title Text 1")
+![alt text](https://nastassjamotro.github.io/Programming-1-Portfolio/versus.png "Logo Title Text 1")
 
 ## GAME
 
